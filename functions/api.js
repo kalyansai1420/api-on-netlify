@@ -56,34 +56,3 @@ exports.handler = async (event, context) => {
     }
 };
 
-// Fetch example for GET request
-fetch('https://shimmering-sorbet-8f9921.netlify.app/.netlify/functions/api')
-    .then((response) => response.json())
-    .then((data) => {
-        // Handle the retrieved data
-        console.log(data);
-    })
-    .catch((error) => {
-        // Handle any errors
-        console.error(error);
-    });
-
-// Fetch example for POST request
-const data = { key: 'value' };
-
-fetch('https://shimmering-sorbet-8f9921.netlify.app/.netlify/functions/api', {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(data),
-})
-    .then((response) => response.json())
-    .then((data) => {
-        // Handle the response data
-        console.log(data);
-    })
-    .catch((error) => {
-        // Handle any errors
-        console.error(error);
-    });
