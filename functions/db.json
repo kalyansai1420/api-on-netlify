@@ -1,65 +1,905 @@
 {
-  "users": [
-	{
-	  "id": 1,
-	  "name": "John Doe",
-	  "email": "john.doe@example.com",
-	  "age": 28
-	},
-	{
-	  "id": 2,
-	  "name": "Jane Smith",
-	  "email": "jane.smith@example.com",
-	  "age": 34
-	},
-	{
-	  "id": 3,
-	  "name": "Alice Johnson",
-	  "email": "alice.johnson@example.com",
-	  "age": 23
-	}
-  ],
-  "products": [
-	{
-	  "id": 101,
-	  "name": "Laptop",
-	  "price": 999.99,
-	  "quantity": 50
-	},
-	{
-	  "id": 102,
-	  "name": "Smartphone",
-	  "price": 699.99,
-	  "quantity": 150
-	},
-	{
-	  "id": 103,
-	  "name": "Headphones",
-	  "price": 199.99,
-	  "quantity": 200
-	}
-  ],
-  "orders": [
-	{
-	  "orderId": 1001,
-	  "userId": 1,
-	  "productId": 101,
-	  "quantity": 1,
-	  "totalPrice": 999.99
-	},
-	{
-	  "orderId": 1002,
-	  "userId": 2,
-	  "productId": 102,
-	  "quantity": 2,
-	  "totalPrice": 1399.98
-	},
-	{
-	  "orderId": 1003,
-	  "userId": 3,
-	  "productId": 103,
-	  "quantity": 3,
-	  "totalPrice": 599.97
-	}
-  ]
+    "starters":
+    [   
+        {
+            "id": 1,
+            "title": "Seekh Kebab (2 pcs)",
+            "price": "2.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 2,
+            "title": "Chapli Kebab (1 pcs)",
+            "price": "5.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 3,
+            "title": "Chicken Tikka (4 pcs)",
+            "price": "4.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 4,
+            "title": "Chicken Wings (4 pcs)",
+            "price": "2.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 5,
+            "title": "Tandoori Chicken (Quarter)",
+            "price": "1.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 6,
+            "title": "Lamb Tikka (8 pcs)",
+            "price": "9.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 7,
+            "title": "Lamb Chops (4 pcs)",
+            "price": "7.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 8,
+            "title": "Malai Tikka (4 pcs)",
+            "price": "5.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 9,
+            "title": "Chicken Drum Sticks (2 pcs)",
+            "price": "2.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 10,
+            "title": "Chicken 65 (Med)",
+            "price": "4.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 11,
+            "title": "Chicken 65 (Large)",
+            "price": "6.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 12,
+            "title": "Chicken Chilli (Med)",
+            "price": "4.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 13,
+            "title": "Chicken Drum Sticks (Lrg)",
+            "price": "6.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 14,
+            "title": "Mix Grill",
+            "price": "14.99",
+            "link": "Add to order"
+        }
+    ],
+    "rice":
+    [
+        {
+            "id": 15,
+            "title": "Veg Fried Rice",
+            "price": "2.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 16,
+            "title": "Bagara Rice",
+            "price": "2.99",
+            "link": "Add to order"
+        }
+
+    ],
+    "vegCurries":
+    [
+        {
+            "id": 17,
+            "title": "Chana Masala",
+            "mdPrice": "4.99",
+            "lgPrice": "7.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 18,
+            "title": "Chana Dal",
+            "mdPrice": "4.99",
+            "lgPrice": "7.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 19,
+            "title": "Dal Makhani",
+            "mdPrice": "4.99",
+            "lgPrice": "7.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 20,
+            "title": "Daloha",
+            "mdPrice": "4.99",
+            "lgPrice": "7.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 21,
+            "title": "Aloo Gobi",
+            "mdPrice": "4.99",
+            "lgPrice": "7.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 22,
+            "title": "Aloo Mutter",
+            "mdPrice": "4.99",
+            "lgPrice": "7.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 23,
+            "title": "Palak Panner",
+            "mdPrice": "4.99",
+            "lgPrice": "7.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 24,
+            "title": "Tadka Dal",
+            "mdPrice": "4.99",
+            "lgPrice": "7.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 25,
+            "title": "Mix Veg",
+            "mdPrice": "4.99",
+            "lgPrice": "7.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 26,
+            "title": "Kadhi Pakoda",
+            "mdPrice": "4.99",
+            "lgPrice": "7.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 27,
+            "title": "Baghan E Baigan",
+            "mdPrice": "4.99",
+            "lgPrice": "7.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 28,
+            "title": "Minchi Ka Salad",
+            "mdPrice": "4.99",
+            "lgPrice": "7.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 29,
+            "title": "Bhandi Masala",
+            "mdPrice": "4.99",
+            "lgPrice": "7.99",
+            "link": "Add to order"
+        }
+    ],
+    "vegSpecial":
+    [
+        {
+            "id": 30,
+            "title": "Dal Mash",
+            "mdPrice": "6.99",
+            "lgPrice": "9.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 31,
+            "title": "Paneer Fry",
+            "mdPrice": "6.99",
+            "lgPrice": "9.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 32,
+            "title": "Shahi Paneer",
+            "mdPrice": "6.99",
+            "lgPrice": "9.99",
+            "link": "Add to order"
+        }
+    ],    
+    "ShahiTawa":
+    [
+        {
+            "id": 33,
+            "title": "Tawa Chicken",
+            "price": "8.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 34,
+            "title": "Tawa Chicken Jalferazi",
+            "price": "9.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 35,
+            "title": "Tawa Chicken Achari",
+            "price": "9.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 36,
+            "title": "Tawa Keema (Lamb Mince)",
+            "price": "9.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 37,
+            "title": "Tawa Gurda(Lamb Kidney)",
+            "price": "9.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 38,
+            "title": "Tawa Paneer",
+            "price": "7.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 39,
+            "title": "Tawa King Prawn",
+            "price": "12.99",
+            "link": "Add to order"
+        }
+    ],
+    "Biryani":
+    [
+        {
+            "id": 40,
+            "title": "Chicken Dum Biryani",
+            "price": "3.49",
+            "link": "Add to order"
+        },
+        {
+            "id": 41,
+            "title": "65 Biryani",
+            "price": "4.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 42,
+            "title": "Biryani Meal",
+            "price": "4.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 43,
+            "title": "Lamb Dum Biryani",
+            "price": "7.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 44,
+            "title": "Egg Biryani",
+            "price": "3.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 45,
+            "title": "Vegetable Dum Biryani",
+            "price": "2.99",
+            "link": "Add to order"
+        }
+  
+    ],
+    "NonVegCurries":
+    [
+        {
+            "id": 46,
+            "title": "Chicken Curry",
+            "mdPrice": "5.99",
+            "lgPrice": "7.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 47,
+            "title": "Butter Chicken",
+            "mdPrice": "6.99",
+            "lgPrice": "8.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 48,
+            "title": "Malai Chicken",
+            "mdPrice": "6.99",
+            "lgPrice": "8.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 49,
+            "title": "Dum Ka Chicken",
+            "mdPrice": "6.99",
+            "lgPrice": "8.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 50,
+            "title": "Aloo Keema",
+            "mdPrice": "6.99",
+            "lgPrice": "8.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 51,
+            "title": "Lamb Curry",
+            "mdPrice": "7.99",
+            "lgPrice": "9.99",
+            "link": "Add to order"
+        }
+
+    ],
+    "NaanBread":
+    [
+        {
+            "id": 52,
+            "title": "Naan/Roti",
+            "price": "0.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 53,
+            "title": "Butter Naan/Roti",
+            "price": "1.20",
+            "link": "Add to order"
+        },
+        {
+            "id": 54,
+            "title": "Chapati",
+            "price": "1.49",
+            "link": "Add to order"
+        },
+        {
+            "id": 55,
+            "title": "Shahi Naan",
+            "price": "1.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 56,
+            "title": "Paratha",
+            "price": "1.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 57,
+            "title": "Garlic Naan",
+            "price": "1.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 58,
+            "title": "Afghani Naan",
+            "price": "2.49",
+            "link": "Add to order"
+        },
+        {
+            "id": 59,
+            "title": "Peshawari Naan",
+            "price": "2.49",
+            "link": "Add to order"
+        },
+        {
+            "id": 60,
+            "title": "Cheese Naan",
+            "price": "2.49",
+            "link": "Add to order"
+        },
+        {
+            "id": 61,
+            "title": "Chilli Garlic Naan",
+            "price": "2.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 62,
+            "title": "Aloo Paratha",
+            "price": "2.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 63,
+            "title": "Keema Naan",
+            "price": "3.49",
+            "link": "Add to order"
+        }
+
+    ],
+    "Burgers":
+    [
+        {
+            "id": 64,
+            "title": "Grilled Cheese Burger",
+            "price": "4.00",
+            "link": "Add to order"
+        },
+        {
+            "id": 65,
+            "title": "Ultimate Cheese Burger",
+            "price": "5.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 66,
+            "title": "Copenhegan Beef Burger",
+            "price": "7.49",
+            "link": "Add to order"
+        },
+        {
+            "id": 67,
+            "title": "Mr. Beast(OMG)",
+            "price": "10.49",
+            "link": "Add to order"
+        },
+        {
+            "id": 68,
+            "title": "Combo Special",
+            "price": "8.49",
+            "link": "Add to order"
+        },
+        {
+            "id": 69,
+            "title": "Grilled Chicken Burger",
+            "price": "4.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 70,
+            "title": "Chicken Fillet Burger",
+            "price": "4.00",
+            "link": "Add to order"
+        },
+        {
+            "id": 71,
+            "title": "States Special Burger",
+            "price": "7.49",
+            "link": "Add to order"
+        },
+        {
+            "id": 72,
+            "title": "Wild Burger",
+            "price": "4.99",
+            "link": "Add to order"
+        }
+    ],
+    "KidsMenu":
+    [
+        {
+            "id": 73,
+            "title": "Beef Burger",
+            "price": "4.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 74,
+            "title": "Nuggets (6 pieces)",
+            "price": "4.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 75,
+            "title": "Chicken Burger",
+            "price": "4.99",
+            "link": "Add to order"
+        }
+    ],
+    "VeggieAndVegan":
+    [
+        {
+            "id": 76,
+            "title": "Jacket Potato",
+            "price": "4.00",
+            "link": "Add to order"
+        },
+        {
+            "id": 77,
+            "title": "Classic Veg Burger",
+            "price": "4.00",
+            "link": "Add to order"
+        },
+        {
+            "id": 78,
+            "title": "Special Vegan Burger",
+            "price": "6.49",
+            "link": "Add to order"
+        },
+        {
+            "id": 79,
+            "title": "Haloumi Burger",
+            "price": "4.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 80,
+            "title": "Falafel Wrap",
+            "price": "4.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 81,
+            "title": "Haloumi Wrap",
+            "price": "4.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 82,
+            "title": "Special Falafel Wrap",
+            "price": "5.99",
+            "link": "Add to order"
+        }
+    ],
+    "Pizza":
+    [
+        {
+            "id": 83,
+            "title": "Margherita",
+            "mdPrice": "4.99",
+            "lgPrice": "6.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 84,
+            "title": "American Hot Pizza",
+            "mdPrice": "4.99",
+            "lgPrice": "6.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 85,
+            "title": "Chicken Tikka Pizza",
+            "mdPrice": "8.99",
+            "lgPrice": "11.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 86,
+            "title": "BBQ Pizza",
+            "mdPrice": "8.99",
+            "lgPrice": "11.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 87,
+            "title": "Pepperoni",
+            "mdPrice": "4.99",
+            "lgPrice": "6.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 88,
+            "title": "Vegetarian",
+            "mdPrice": "4.99",
+            "lgPrice": "6.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 89,
+            "title": "Hawaiian",
+            "mdPrice": "4.99",
+            "lgPrice": "6.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 90,
+            "title": "Shahi Paneer Pizza",
+            "mdPrice": "4.99",
+            "lgPrice": "6.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 91,
+            "title": "All Meat Pizza",
+            "mdPrice": "8.99",
+            "lgPrice": "11.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 92,
+            "title": "Mexican Hot",
+            "mdPrice": "8.99",
+            "lgPrice": "11.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 93,
+            "title": "Tandoori Chicken",
+            "mdPrice": "8.99",
+            "lgPrice": "11.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 94,
+            "title": "Sea Food Pizza",
+            "mdPrice": "8.99",
+            "lgPrice": "11.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 95,
+            "title": "Shish Kebab Pizza",
+            "mdPrice": "8.99",
+            "lgPrice": "11.99",
+            "link": "Add to order"
+        }
+    ],
+    "Extratoppings":
+    [
+
+        {
+            "id": 96,
+            "title": "MEAT",
+            "mdPrice": "1.00",
+            "lgPrice": "1.50",
+            "link": "Add to order"
+        },
+        {
+            "id": 97,
+            "title": "VEG",
+            "mdPrice": "1.00",
+            "lgPrice": "1.50",
+            "link": "Add to order"
+        }
+    ],
+    "Wraps":
+    [
+        {
+            "id": 98,
+            "title": "Chicken Shawarma Wrap",
+            "price": "4.49",
+            "link": "Add to order"
+        },
+        {
+            "id": 99,
+            "title": "Chicken Shawarma Wrap (Large)",
+            "price": "5.49",
+            "link": "Add to order"
+        },
+        {
+            "id": 100,
+            "title": "Peri Peri Strips Wrap",
+            "price": "4.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 101,
+            "title": "Traditional Shawarma Plate",
+            "price": "7.49",
+            "link": "Add to order"
+        }
+
+    ],
+    "Salad":
+    [
+        {
+            "id": 102,
+            "title": "Salad",
+            "price": "1.49",
+            "link": "Add to order"
+        }
+    ],
+    "Drinks":
+    [
+        {    
+            "id": 103,
+            "title": "Cans",
+            "mdPrice": "0.99",
+            "lgPrice": "",
+            "link": "Add to order"
+        },
+        {    
+            "id": 104,
+            "title": "Lassi Sweet/Salti",
+            "mdPrice": "2.49",
+            "lgPrice": "6.99",
+            "link": "Add to order"
+        },
+        {    
+            "id": 105,
+            "title": "Lassi Mango",
+            "mdPrice": "2.99",
+            "lgPrice": "7.99",
+            "link": "Add to order"
+        },
+        {    
+            "id": 106,
+            "title": "Majito",
+            "mdPrice": "2.99",
+            "lgPrice": "6.99",
+            "link": "Add to order"
+        },
+        {    
+            "id": 107,
+            "title": "Masala Tea",
+            "mdPrice": "",
+            "lgPrice": "1.99",
+            "link": "Add to order"
+        },
+        {    
+            "id": 108,
+            "title": "Green Tea",
+            "mdPrice": "",
+            "lgPrice": "1.49",
+            "link": "Add to order"
+        },
+        {    
+            "id": 109,
+            "title": "Falooda",
+            "mdPrice": "3.99",
+            "lgPrice": "4.99",
+            "link": "Add to order"
+        }
+    ],
+    "Sides":
+    [
+        {
+            "id": 110,
+            "title": "Peri Peri Wings ",
+            "price": "3.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 111,
+            "title": "BBQ Wings ",
+            "price": "6.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 112,
+            "title": "Onion Rings ",
+            "price": "5.00",
+            "link": "Add to order"
+        },       
+        {
+            "id": 113,
+            "title": "Sweet Potato",
+            "price": "3.50",
+            "link": "Add to order"
+        },       
+        {
+            "id": 114,
+            "title": "Curly Fries",
+            "price": "3.50",
+            "link": "Add to order"
+        },       
+        {
+            "id": 115,
+            "title": "Mozzarella Sticks",
+            "price": "3.50",
+            "link": "Add to order"
+        },       
+        {
+            "id": 116,
+            "title": "Potato Wedges",
+            "price": "3.50",
+            "link": "Add to order"
+        },       
+        {
+            "id": 117,
+            "title": "Chicken Strips ",
+            "price": "3.99",
+            "link": "Add to order"
+        }
+ 
+    ],
+    "Desserts":
+    [
+        {
+            "id": 118,
+            "title": "Gulab Jamun",
+            "price": "2.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 119,
+            "title": "Kheer",
+            "price": "4.99",
+            "link": "Add to order"
+        },        
+        {
+            "id": 120,
+            "title": "Custard With Apple Crumble",
+            "price": "3.50",
+            "link": "Add to order"
+        },        
+        {
+            "id": 121,
+            "title": "Banana Cake With Custard",
+            "price": "3.50",
+            "link": "Add to order"
+        },        
+        {
+            "id": 122,
+            "title": "Chocolate Fudge Cake",
+            "price": "3.50",
+            "link": "Add to order"
+        }
+    ],
+    "MilkShake":
+    [
+        {
+            "id": 123,
+            "title": "Vanilla",
+            "price": "3.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 124,
+            "title": "Oreo",
+            "price": "3.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 125,
+            "title": "Snickers",
+            "price": "3.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 126,
+            "title": "Kinder Bueno",
+            "price": "3.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 127,
+            "title": "Shahi Special",
+            "price": "4.99",
+            "link": "Add to order"
+        }
+    ],
+    "Smoothies":
+    [
+        {
+            "id": 128,
+            "title": "Raspberry Heaven",
+            "price": "3.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 129,
+            "title": "Mango Dream",
+            "price": "3.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 130,
+            "title": "Vitamin Explosion",
+            "price": "3.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 131,
+            "title": "Strawberry Fantasy",
+            "price": "3.99",
+            "link": "Add to order"
+        },
+        {
+            "id": 132,
+            "title": "Pineapple Sunset",
+            "price": "3.99",
+            "link": "Add to order"
+        }
+    ]
 }
