@@ -1,0 +1,65 @@
+{
+  "users": [
+	{
+	  "id": 1,
+	  "name": "John Doe",
+	  "email": "john.doe@example.com",
+	  "age": 28
+	},
+	{
+	  "id": 2,
+	  "name": "Jane Smith",
+	  "email": "jane.smith@example.com",
+	  "age": 34
+	},
+	{
+	  "id": 3,
+	  "name": "Alice Johnson",
+	  "email": "alice.johnson@example.com",
+	  "age": 23
+	}
+  ],
+  "products": [
+	{
+	  "id": 101,
+	  "name": "Laptop",
+	  "price": 999.99,
+	  "quantity": 50
+	},
+	{
+	  "id": 102,
+	  "name": "Smartphone",
+	  "price": 699.99,
+	  "quantity": 150
+	},
+	{
+	  "id": 103,
+	  "name": "Headphones",
+	  "price": 199.99,
+	  "quantity": 200
+	}
+  ],
+  "orders": [
+	{
+	  "orderId": 1001,
+	  "userId": 1,
+	  "productId": 101,
+	  "quantity": 1,
+	  "totalPrice": 999.99
+	},
+	{
+	  "orderId": 1002,
+	  "userId": 2,
+	  "productId": 102,
+	  "quantity": 2,
+	  "totalPrice": 1399.98
+	},
+	{
+	  "orderId": 1003,
+	  "userId": 3,
+	  "productId": 103,
+	  "quantity": 3,
+	  "totalPrice": 599.97
+	}
+  ]
+}
